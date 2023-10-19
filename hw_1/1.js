@@ -13,4 +13,12 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+
+function convertCelciusToFahrenheit(temperatureСelcius) {
+    let tempFahrenheit = (9 / 5) * temperatureСelcius + 32
+    alert(tempFahrenheit);
+}
+
+let inputUserTemperature = prompt("Введите температуру в градусах по цельсию");
+convertCelciusToFahrenheit(inputUserTemperature);
+
