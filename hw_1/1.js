@@ -14,11 +14,11 @@
 */
 
 
-function convertCelciusToFahrenheit(temperatureСelcius) {
-    let tempFahrenheit = (9 / 5) * temperatureСelcius + 32
+function outputConvertCelciusToFahrenheit(temperatureСelcius) {
+    let tempFahrenheit = Math.round(((9 / 5) * temperatureСelcius + 32) * 100) / 100;
     alert(tempFahrenheit);
 }
 
-let inputUserTemperature = prompt("Введите температуру в градусах по цельсию");
-convertCelciusToFahrenheit(inputUserTemperature);
+let inputUserTemperature = +prompt("Введите температуру в градусах по цельсию");
+outputConvertCelciusToFahrenheit(inputUserTemperature);
 
