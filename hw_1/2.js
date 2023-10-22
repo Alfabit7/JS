@@ -7,8 +7,8 @@
 Вывести значение переменной admin в консоль.
 */
 
-let name = prompt("Введите Ваше имя");
-let admin = name;
+const userName = prompt("Введите Ваше имя");
+const admin = userName;
 console.log(`Переменная admin содержит значение ${admin}`);
 
 
