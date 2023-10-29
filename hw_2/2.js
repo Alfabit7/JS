@@ -12,6 +12,6 @@ if (test === true) {
 }
 */
 
-let requestQuantityMoney = confirm("У вас много денег?");
+const requestQuantityMoney = confirm("У вас много денег?");
 
 console.log(requestQuantityMoney ? "Скоро будем у вас ))" : "До свидания!");

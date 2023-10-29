@@ -19,9 +19,7 @@ if (dayNumber >= 1 && dayNumber <= 10) {
     console.log(`Число ${dayNumber} попадает в первую декаду месяца.`);
 } else if (dayNumber > 10 && dayNumber <= 20) {
     console.log(`Число ${dayNumber} попадает вторую декаду месяца.`);
-}
-
-else if (dayNumber > 20 && dayNumber < 32) {
+} else if (dayNumber > 20 && dayNumber < 32) {
     console.log(`Число ${dayNumber} попадает третью декаду месяца.`);
 } else {
     console.log("Вы ввели некорректное значение");
