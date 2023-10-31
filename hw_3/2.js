@@ -15,8 +15,8 @@ function minusTax(salary) {
     return salary *= tax;
 }
 
-if (!inputUserNumber || inputUserNumber <= 0) {
+if (!Number.isFinite(inputUserNumber) || inputUserNumber <= 0) {
     console.log("Значение задано неверно");
 } else {
-    console.log(minusTax(inputUserNumber));
+    console.log(`Размер заработной платы за вычетом налогов равен: ${Math.round(minusTax(inputUserNumber) * 100) / 100}`);
 }

@@ -19,34 +19,32 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 */
 
 
-
 function sum(num1, num2) {
-    return console.log(sum = num1 + num2);
+    return num1 + num2;
 }
 
 function diff(num1, num2) {
     if (num1 > num2) {
-        return console.log(sum = num1 - num2);
-    } else if (num1 === num2) {
-        return console.log(0);
+        return num1 - num2;
+    } if (num1 === num2) {
+        return 0;
     } else {
-        return console.log(sum = num2 - num1);
+        return num2 - num1;
     }
-
 }
 
 function division(num1, num2) {
     if (num2 === 0) {
         console.log("Делить на ноль нельзя!");
     }
-    return console.log(sum = num1 / num2);
+    return num1 / num2;
 }
 
 function multiplication(num1, num2) {
-    return console.log(sum = num1 * num2);
+    return num1 * num2;
 }
 
-sum(2, 6);
-diff(3, 7);
-division(120, 2)
-multiplication(100, 3);
+console.log(sum(2, 6));
+console.log(diff(3, 7));
+console.log(division(120, 2));
+console.log(multiplication(100, 3));
