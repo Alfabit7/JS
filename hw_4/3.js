@@ -17,12 +17,12 @@ const arr = [];
 let sum = 0;
 let minNumber = 0;
 const newArr = [];
-for (let i = 0; i < 6; i++) {
-    const randomNumber = Math.round(Math.random() * 10);
-    arr.push(randomNumber)
+for (let i = 0; i < 5; i++) {
+    const randomNumber = Math.floor(Math.random() * 10);
+    arr.push(randomNumber);
     sum += randomNumber;
-    minNumber = Math.min.apply(null, arr);
-    if (randomNumber == 3) {
+    minNumber = Math.min(...arr);
+    if (randomNumber === 3) {
         newArr.push(i);
     }
 }
