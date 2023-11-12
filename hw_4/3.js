@@ -21,11 +21,11 @@ for (let i = 0; i < 5; i++) {
     const randomNumber = Math.floor(Math.random() * 10);
     arr.push(randomNumber);
     sum += randomNumber;
-    minNumber = Math.min(...arr);
     if (randomNumber === 3) {
         newArr.push(i);
     }
 }
+minNumber = Math.min(...arr);
 
 console.log(`Новый массив: ${arr}`);
 console.log(`Сумма элементов массива равна: ${sum}`);
