@@ -1,5 +1,4 @@
 "use strict";
-
 /*
 Дан объект numbers. 
 Необходимо в консоль вывести все значения объекта, которые больше или равны 3.
@@ -15,4 +14,17 @@ const numbers = {
   key7: 7,
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+// for (let el in numbers) {
+//   if (numbers[el] >= 3) {
+//     console.log(numbers[el])
+//   }
+// }
+
+
+const valueObj = Object.values(numbers);
+for (const iterator of valueObj) {
+  if (iterator >= 3) {
+    console.log(`Number: ${iterator}`)
+  }
+}
+

@@ -1,5 +1,4 @@
 "use strict";
-
 /*
 1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна
 фотография, используя метод filter. Исходные данные - массив products.
@@ -31,4 +30,14 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+
+// 1. 
+products.filter((el) => {
+  if (el.photos && !(el.photos.length === 0))
+    console.log(el);
+})
+console.log(`\n`);
+// 2.
+products.sort((x, y) => x.price - y.price);
+products.forEach(el => console.log(el));
+

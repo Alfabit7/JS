@@ -1,5 +1,4 @@
 "use strict";
-
 /*
 Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя
 метод forEach.
@@ -23,4 +22,8 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+products.forEach(element => {
+  element.price = element.price * 0.85;
+  console.log(`Исходный прайс ${element.price} минус 15% от прайса ${element.price * 0.85}`);
+});
+
