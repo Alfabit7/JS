@@ -15,7 +15,6 @@ console.log(elBtn);
 // 3. Необходимо удалить класс "dropdown-menu" у элемента, у которого присутствует класс "menu".
 let elDropdownMenu = document.querySelector('.dropdown .menu');
 elDropdownMenu.classList.remove('dropdown-menu');
-
 console.log(elDropdownMenu);
 
 // 4. Используя метод insertAdjacentHTML добавьте после div'a с классом "dropdown" следующую разметку:
@@ -23,7 +22,6 @@ console.log(elDropdownMenu);
 let elDivDropdownMenu = document.querySelector('div.dropdown');
 elDivDropdownMenu.insertAdjacentHTML('afterBegin', '<a href="#">link</a>');
 console.log(elDivDropdownMenu);
-
 
 // 5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
 let elDropdownMenuButton = document.querySelector('div button#dropdownMenuButton');
@@ -34,7 +32,6 @@ console.log(elDropdownMenuButton);
 let elDataAttribute = document.querySelector('[aria-labelledby]');
 elDataAttribute.setAttribute('data-dd', 3);
 console.log(elDataAttribute);
-
 
 // 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
 let elType = document.querySelector('div button.dropdown-toggle');
