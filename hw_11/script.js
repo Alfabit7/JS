@@ -1,6 +1,6 @@
 const dataProducts = JSON.parse(dataProductsJson);
 
-let container = document.query
+let container = document.querySelector('.container')
 
 /* HTML Теги скрипта при использовании querySelector не анализируются как HTML 
 поэтому получить вложенный элемент, заключенный в тег Script  напрямую вот так: let productTemplate = document.querySelector('#productTemplate .product')  невозможно */
