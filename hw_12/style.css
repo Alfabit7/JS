@@ -1,0 +1,156 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    border-radius: 8px;
+    height: 4px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 0 0 5px #222;
+    background: rgba(203,200,199, 0.9); 
+}  
+
+
+ input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgba(203,200,199);
+    border: 1px solid #bdc3c7;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    }
+ 
+
+
+.hidden{
+    opacity: 0;
+   transition: opacity 1s;
+} 
+.show{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.container{
+    margin-top: 50px;
+
+}
+
+.player{
+    width: 1200px;
+    height: 600px;
+}
+
+.video{
+    width: 100%;
+}
+
+.controlPanel{ 
+    position: absolute;
+    top: 670px;
+    height: 20px;
+    width:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.volumeSound{
+    padding: 0;
+    margin-right: 15px;
+    margin-left: 0;
+    cursor: pointer;
+    height: 40px;
+}
+
+
+.settingsMenu{
+    position: absolute;
+    top:-120px;
+    left:1050px;
+    width: 130px;
+    height: 120px;
+    background-color: rgba(203,200,199, 0.3);
+    color: white;
+    border-radius: 4%;
+}
+
+.settingSpeed{
+    width: inherit;
+    height: 40px; 
+    margin-bottom: 2px;
+   }
+   .resetSpeed{
+    width: inherit;
+    height: 40px; 
+}
+
+.timingVideo{
+    width: inherit;
+}
+
+
+/* ИКОНКИ */
+
+.btnHidden{
+    display: none;
+}
+.btnPlay,
+.btnPause,
+.btnMute,
+.btnSound,
+.btnSettings,
+.closeIcon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-size: contain;
+} 
+
+.btnPlay{
+    background-image: url('images/play.png');
+    margin-left: 10px;
+}
+
+.btnPause{
+    background-image: url('images/pause.png');
+    margin-left: 10px;
+}
+.btnMute{
+    background-image: url('images/mute.png');
+    margin-left: 60%;
+}
+
+.btnSound{
+    background-image: url('images/sound.png');
+    margin-left: 60%;
+}
+
+.btnSettings{
+    background-image: url('images/settings.png');
+    margin-left: 5px;
+}
+.closeIcon{
+    display: inline-block;
+    background-image: url('images/close.png');
+    padding: 0;
+    margin-left: 80%;
+    
+}
+
+.timingBarVideo {
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
